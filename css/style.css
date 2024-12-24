@@ -138,6 +138,10 @@ ul {
   color: white;
   background-color: red;
   transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 #btn1 {
   margin-bottom: 30px;
@@ -343,11 +347,14 @@ footer a:hover {
   margin-bottom: 0px;
   color: #e63946;
 }
-
+.service-item h3 {
+  font-size: 2.5rem;
+  margin: 15px 15px 15px 15px;
+}
 .service-item,
 .pricing-item {
-  background: #444;
-  margin: 20px;
+  background: #363434;
+  margin: 45px;
   padding: 30px;
   border-radius: 10px;
   text-align: left;
@@ -358,8 +365,49 @@ footer a:hover {
   width: 300px;
 }
 
+.pricing-item span {
+  font-size: 2.5rem;
+}
+.service-item,
+.pricing-item P {
+  font-size: 1.5rem;
+  margin: 2px;
+}
+
 .service-item:hover,
 .pricing-item:hover {
   transform: translateY(-10px);
   background-color: orangered;
+}
+.pricing-item ul li {
+  margin: 5px;
+  padding: 5px;
+}
+.btn_pricing {
+  outline: #110e0e;
+  color: white;
+  background: #363434;
+  transition: 0.3s;
+  border-radius: 30px;
+  padding: 8px 8px 8px 8px;
+  align-items: center;
+  margin: 20px 20px 20px 55px;
+  position: relative;
+  z-index: 2;
+  transition: background 0.3s;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -ms-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  text-align: center;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.btn_pricing:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: orangered;
 }
