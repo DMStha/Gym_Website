@@ -75,7 +75,11 @@ body {
   position: absolute;
   float: left;
   margin: 0;
+  width: 50px;
+  filter: grayscale(70%) brightness(80%);
+  -webkit-filter: grayscale(70%) brightness(80%);
 }
+
 nav {
   position: relative;
   display: grid;
@@ -113,10 +117,10 @@ nav {
   display: block;
   padding-right: 35;
 }
-.logo a {
+
+.logo_a {
   position: sticky;
   font-size: 3rem;
-  color: antiquewhite;
   padding: 10px 10px;
   align-items: center;
 }
